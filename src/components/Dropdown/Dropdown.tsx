@@ -15,9 +15,8 @@ import {
   cloneElement,
   MouseEventHandler,
   ReactElement,
-  useCallback, useEffect,
+  useCallback,
   useId,
-  useLayoutEffect,
   useRef,
   useState
 } from 'react';
