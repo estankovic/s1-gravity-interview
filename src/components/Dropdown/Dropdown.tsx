@@ -11,7 +11,7 @@
  * - API is up to you, as there are no known restrictions
  */
 import { Popper } from '@mui/base';
-import {cloneElement, MouseEventHandler, ReactElement, ReactNode, useCallback, useRef, useState} from 'react';
+import {cloneElement, MouseEventHandler, ReactElement, useCallback, useRef, useState} from 'react';
 
 import styles from './Dropdown.module.scss';
 
@@ -26,7 +26,7 @@ interface DropdownProps {
   /**
    * Content of a dropdown panel.
    */
-  children: ReactNode;
+  children: ReactElement;
 }
 
 export function Dropdown(props: DropdownProps) {

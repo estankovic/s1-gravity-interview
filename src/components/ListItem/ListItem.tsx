@@ -1,6 +1,7 @@
 import styles from './ListItem.module.scss';
 import clsx from 'clsx';
-import {useEffect} from 'react';
+import {useRef} from 'react';
+import {useNavigatableItem} from '../../KeyNavigationProvider/KeyNavigationProvider.tsx';
 
 interface ListItemProps {
   children: string;
@@ -12,15 +13,22 @@ export function ListItem(props: ListItemProps) {
     children,
     disabled = false
   } = props;
+  const ref = useRef<HTMLLIElement>(null);
+  const navProps = useNavigatableItem({
+    ref,
+    skip: disabled
+  });
 
   return (
     <li
+      ref={ref}
       className={clsx(
         styles['ListItem'],
         {
           [styles['disabled']]: disabled
         }
       )}
+      {...navProps}
     >{children}</li>
   )
     ;
