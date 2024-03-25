@@ -24,6 +24,8 @@ function App() {
           <li>You can use already installed packages (<code>@mui/base/Popper</code>, <code>clsx</code>)</li>
           <li><code>aria-haspopup</code>, <code>aria-expanded</code>, <code>aria-controls</code> needs to be implemented on trigger element</li>
           <li><code>List</code> and <code>ListItem</code> components need to correctly implement roles indicating that there are menu items inside.</li>
+          <li><code>ListItem</code> component needs correctly announce <em>disabled</em> state</li>
+          <li><code>ListItem</code> should only have focus styles when navigated by keyboard, not mouse</li>
           <li><strong>(Bonus)</strong> Make <code>List</code> component keyboard navigable (Ideally by <code>ArrowUp</code> and <code>ArrowDown</code> keys)</li>
           <li><strong>(Bonus 2)</strong> Make dropdown panel same width as trigger</li>
           <li><strong>(Bonus 3)</strong> Propose improvements</li>
