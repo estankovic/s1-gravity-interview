@@ -20,7 +20,6 @@ export function ListItem(props: ListItemProps) {
           [styles['disabled']]: disabled
         }
       )}
-      tabIndex={disabled ? undefined : 0}
     >{children}</li>
   )
     ;
