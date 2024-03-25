@@ -1,4 +1,4 @@
-import {ReactNode} from 'react';
+import {forwardRef, ReactNode} from 'react';
 
 import styles from './Button.module.scss';
 
@@ -14,13 +14,17 @@ interface ButtonProps {
   disabled?: boolean;
 }
 
-export function Button(props: ButtonProps) {
-  const {children, disabled} = props;
+export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
+  (props, forwardedRef) => {
+  const {children, disabled, ...restProps} = props;
   return (
     <button
+      ref={forwardedRef}
       className={styles.Button}
-      disabled={disabled}>
+      disabled={disabled}
+      {...restProps}
+    >
       {children}
     </button>
   )
-}
+});

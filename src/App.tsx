@@ -11,21 +11,20 @@ import styles from "./App.module.scss";
 import {Button} from './components/Button/Button.tsx';
 import {ChevronDown} from './components/icons/ChevronDown.tsx';
 import {Close} from './components/icons/Close.tsx';
+import {Dropdown} from './components/Dropdown/Dropdown.tsx';
 
 function App() {
   return (
     <div className={styles.PreviewWrapper}>
       <div className={styles.Preview}>
-        <Button>Hello <ChevronDown /><Close/></Button>
-        {/*<Dropdown*/}
-        {/*  trigger={}*/}
-        {/*>*/}
-        {/*  <List>*/}
-        {/*    <ListItem>Option 1</ListItem>*/}
-        {/*    <ListItem disabled={true}>Option 2</ListItem>*/}
-        {/*    <ListItem>Option 2</ListItem>*/}
-        {/*  </List>*/}
-        {/*</Dropdown>*/}
+        <Dropdown
+          trigger={(isOpen) => <Button>Hello {isOpen ? <Close/> : <ChevronDown />}</Button>}>
+            <List>
+              <ListItem>Option 1</ListItem>
+              <ListItem disabled={true}>Option 2</ListItem>
+              <ListItem>Option 2</ListItem>
+            </List>
+        </Dropdown>
       </div>
     </div>
   );

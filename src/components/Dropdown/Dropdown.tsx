@@ -10,7 +10,10 @@
  * - Developer should be able to provide its own trigger element
  * - API is up to you, as there are no known restrictions
  */
-import {ReactNode} from 'react';
+import { Popper } from '@mui/base';
+import {cloneElement, MouseEventHandler, ReactElement, ReactNode, useCallback, useRef, useState} from 'react';
+
+import styles from './Dropdown.module.scss';
 
 
 interface DropdownProps {
@@ -18,7 +21,7 @@ interface DropdownProps {
    * Trigger element of a dropdown
    * @param isOpen
    */
-  trigger: (isOpen: boolean) => void;
+  trigger: (isOpen: boolean) => ReactElement;
 
   /**
    * Content of a dropdown panel.
@@ -26,6 +29,25 @@ interface DropdownProps {
   children: ReactNode;
 }
 
-export function Dropdown() {
-  // TODO implement solution
+export function Dropdown(props: DropdownProps) {
+  const {trigger, children} = props;
+
+  const anchorRef = useRef<HTMLElement>(null);
+  const [open, setOpen] = useState(false)
+
+  const handleTriggerClick = useCallback<MouseEventHandler>(() => {
+    setOpen((value) => !value);
+  }, [])
+
+  return (
+    <>
+      {cloneElement(trigger(open), {
+        ref: anchorRef,
+        onClick: handleTriggerClick,
+      })}
+      <Popper open={open} anchorEl={anchorRef.current}>
+        <div className={styles['Panel']}>{children}</div>
+      </Popper>
+    </>
+  );
 }

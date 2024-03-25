@@ -4,12 +4,14 @@
   border-radius: var(--g-radius-xs);
   padding: var(--g-spacing-xxs) var(--g-spacing-xs);
 
+  cursor: pointer;
+
   &:hover:not(.disabled) {
     background: var(--g-colors-interactives-bg--hover);
   }
 
   &:focus {
-    outline: 2px solid purple;
+    outline: 2px solid var(--g-colors-interactives-border--focus);
   }
 
   &.disabled {
