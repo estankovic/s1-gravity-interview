@@ -18,19 +18,7 @@ function App() {
     <div className={styles.PreviewWrapper}>
       <div className={styles.Preview}>
         <Dropdown
-          trigger={(isOpen) => <Button>Hello {isOpen ? <Close/> : <ChevronDown />}</Button>}>
-          <List>
-            <ListItem>Option 1</ListItem>
-            <ListItem disabled={true}>Option 2</ListItem>
-            <ListItem>Option 3</ListItem>
-            <ListItem disabled={true}>Option 4</ListItem>
-            <ListItem>Option 5</ListItem>
-            <ListItem>Option 6</ListItem>
-          </List>
-        </Dropdown>
-
-        <Dropdown
-          trigger={(isOpen) => <Button>Hello 2 {isOpen ? <Close/> : <ChevronDown />}</Button>}>
+          trigger={(isOpen) => <Button>I am a trigger element {isOpen ? <Close/> : <ChevronDown />}</Button>}>
           <List>
             <ListItem>Option 1</ListItem>
             <ListItem disabled={true}>Option 2</ListItem>

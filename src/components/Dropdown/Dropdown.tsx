@@ -11,10 +11,9 @@
  * - API is up to you, as there are no known restrictions
  */
 import { Popper } from '@mui/base';
-import {cloneElement, MouseEventHandler, ReactElement, useCallback, useRef, useState} from 'react';
+import {cloneElement, MouseEventHandler, ReactElement, useCallback, useId, useRef, useState} from 'react';
 
 import styles from './Dropdown.module.scss';
-
 
 interface DropdownProps {
   /**
@@ -32,6 +31,8 @@ interface DropdownProps {
 export function Dropdown(props: DropdownProps) {
   const {trigger, children} = props;
 
+  const dropdownId = useId();
+
   const anchorRef = useRef<HTMLElement>(null);
   const [open, setOpen] = useState(false)
 
@@ -44,8 +45,11 @@ export function Dropdown(props: DropdownProps) {
       {cloneElement(trigger(open), {
         ref: anchorRef,
         onClick: handleTriggerClick,
+        'aria-haspopup': true,
+        'aria-expanded': open,
+        'aria-controls': dropdownId
       })}
-      <Popper open={open} anchorEl={anchorRef.current}>
+      <Popper disablePortal={true} keepMounted={true} open={open} anchorEl={anchorRef.current} role="presentation" id={dropdownId}>
         <div className={styles['Panel']}>{children}</div>
       </Popper>
     </>

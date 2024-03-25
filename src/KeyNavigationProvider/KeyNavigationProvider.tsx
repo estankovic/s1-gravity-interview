@@ -97,7 +97,8 @@ class KeyNavigationController {
     const isCurrentItem = document.activeElement === currentItem?.ref?.current || false;
 
     return {
-      tabIndex: isCurrentItem ? 0 : -1
+      tabIndex: isCurrentItem ? 0 : -1,
+      id: uid
     }
   }
 }

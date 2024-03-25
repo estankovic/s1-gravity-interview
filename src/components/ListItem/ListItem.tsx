@@ -21,6 +21,7 @@ export function ListItem(props: ListItemProps) {
 
   return (
     <li
+      role="menuitem"
       ref={ref}
       className={clsx(
         styles['ListItem'],
@@ -29,6 +30,7 @@ export function ListItem(props: ListItemProps) {
         }
       )}
       {...navProps}
+      aria-disabled={disabled}
     >{children}</li>
   )
     ;
