@@ -10,8 +10,17 @@
  * - Developer should be able to provide its own trigger element
  * - API is up to you, as there are no known restrictions
  */
-import { Popper } from '@mui/base';
-import {cloneElement, MouseEventHandler, ReactElement, useCallback, useId, useRef, useState} from 'react';
+import {Popper} from '@mui/base';
+import {
+  cloneElement,
+  MouseEventHandler,
+  ReactElement,
+  useCallback, useEffect,
+  useId,
+  useLayoutEffect,
+  useRef,
+  useState
+} from 'react';
 
 import styles from './Dropdown.module.scss';
 
@@ -34,6 +43,7 @@ export function Dropdown(props: DropdownProps) {
   const dropdownId = useId();
 
   const anchorRef = useRef<HTMLElement>(null);
+  const poperRef = useRef<HTMLDivElement>(null);
   const [open, setOpen] = useState(false)
 
   const handleTriggerClick = useCallback<MouseEventHandler>(() => {
@@ -49,8 +59,8 @@ export function Dropdown(props: DropdownProps) {
         'aria-expanded': open,
         'aria-controls': dropdownId
       })}
-      <Popper disablePortal={true} keepMounted={true} open={open} anchorEl={anchorRef.current} role="presentation" id={dropdownId}>
-        <div className={styles['Panel']}>{children}</div>
+      <Popper placement={'bottom-end'} open={open} anchorEl={anchorRef.current} role="presentation" id={dropdownId}>
+        <div ref={poperRef} className={styles['Panel']}>{children}</div>
       </Popper>
     </>
   );
