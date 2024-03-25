@@ -1,0 +1,8 @@
+.List {
+  all: unset;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--g-spacing-xxxs);
+  padding: var(--g-spacing-xs) var(--g-spacing-xxs);
+}

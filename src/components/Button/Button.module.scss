@@ -1,0 +1,26 @@
+.Button {
+  all: unset;
+
+  display: inline-flex;
+  align-items: center;
+  gap: var(--g-spacing-md);
+
+  color: var(--g-colors-text-primary-contrast);
+  background: var(--g-colors-interactives-bg--default);
+  border-radius: var(--g-radius-xs);
+  padding: var(--g-spacing-xxs) var(--g-spacing-xs);
+
+  &:hover {
+    cursor: pointer;
+    background: var(--g-_private-mode-primary-40);
+  }
+
+  &:active {
+    background: var(--g-_private-mode-primary-30);
+  }
+
+  &:focus {
+    outline-offset: 2px;
+    outline: 2px solid var(--g-colors-interactives-border--focus);
+  }
+}

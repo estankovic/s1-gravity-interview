@@ -1,0 +1,215 @@
+:root,
+[data-theme=light] {
+  --g-_private-mode-alert-10: #410003;
+  --g-_private-mode-alert-20: #750008;
+  --g-_private-mode-alert-30: #93000f;
+  --g-_private-mode-alert-40: #bc121c;
+  --g-_private-mode-alert-45: #de3030;
+  --g-_private-mode-alert-50: #e03231;
+  --g-_private-mode-alert-60: #ff544d;
+  --g-_private-mode-alert-70: #ff897f;
+  --g-_private-mode-alert-80: #ffb3ac;
+  --g-_private-mode-alert-90: #ffdad6;
+  --g-_private-mode-alert-95: #ffedeb;
+  --g-_private-mode-alert-99: #fffafa;
+
+  --g-_private-mode-amber-10: #371a00;
+  --g-_private-mode-amber-20: #592a00;
+  --g-_private-mode-amber-30: #853e00;
+  --g-_private-mode-amber-40: #c14a06;
+  --g-_private-mode-amber-45: #ed6007;
+  --g-_private-mode-amber-50: #fa851e;
+  --g-_private-mode-amber-60: #fba050;
+  --g-_private-mode-amber-70: #ffb370;
+  --g-_private-mode-amber-80: #ffc898;
+  --g-_private-mode-amber-90: #ffe5ce;
+  --g-_private-mode-amber-95: #fff5eb;
+  --g-_private-mode-amber-99: #fffcfa;
+
+  --g-_private-mode-neutral-0: #1c1b1e;
+  --g-_private-mode-neutral-10: #1c1b1e;
+  --g-_private-mode-neutral-20: #323033;
+  --g-_private-mode-neutral-30: #48464a;
+  --g-_private-mode-neutral-40: #605d61;
+  --g-_private-mode-neutral-45: #6c696d;
+  --g-_private-mode-neutral-50: #767377;
+  --g-_private-mode-neutral-60: #938f94;
+  --g-_private-mode-neutral-70: #aeaaae;
+  --g-_private-mode-neutral-80: #cac5ca;
+  --g-_private-mode-neutral-90: #e6e1e6;
+  --g-_private-mode-neutral-95: #f1eef1;
+  --g-_private-mode-neutral-99: #faf9fa;
+  --g-_private-mode-neutral-100: #ffffff;
+
+  --g-_private-mode-primary-10: #23005b;
+  --g-_private-mode-primary-20: #3c0090;
+  --g-_private-mode-primary-30: #5700c9;
+  --g-_private-mode-primary-40: #7030e6;
+  --g-_private-mode-primary-45: #854ef3;
+  --g-_private-mode-primary-50: #8951ff;
+  --g-_private-mode-primary-60: #a078ff;
+  --g-_private-mode-primary-70: #b89bff;
+  --g-_private-mode-primary-80: #d1bcff;
+  --g-_private-mode-primary-90: #f1eaff;
+  --g-_private-mode-primary-95: #f9f4ff;
+  --g-_private-mode-primary-99: #fffbff;
+
+  --g-_private-mode-success-10: #002115;
+  --g-_private-mode-success-20: #003826;
+  --g-_private-mode-success-30: #005139;
+  --g-_private-mode-success-40: #006c4c;
+  --g-_private-mode-success-45: #009974;
+  --g-_private-mode-success-50: #00a37c;
+  --g-_private-mode-success-60: #35b68b;
+  --g-_private-mode-success-70: #61c69f;
+  --g-_private-mode-success-80: #8ce3bf;
+  --g-_private-mode-success-90: #d0fbe5;
+  --g-_private-mode-success-95: #e8fdf3;
+  --g-_private-mode-success-99: #f4fff9;
+
+  --g-_private-mode-translucent-0--12: rgba(28, 27, 30, 0.12);
+  --g-_private-mode-translucent-0--30: rgba(28, 27, 30, 0.30);
+  --g-_private-mode-translucent-100--30: rgba(255, 255, 255, 0.30);
+
+  --g-_private-mode-yellow-10: #332800;
+  --g-_private-mode-yellow-20: #524100;
+  --g-_private-mode-yellow-30: #705a00;
+  --g-_private-mode-yellow-40: #8f7200;
+  --g-_private-mode-yellow-45: #b28f00;
+  --g-_private-mode-yellow-50: #e5b800;
+  --g-_private-mode-yellow-60: #ffd633;
+  --g-_private-mode-yellow-70: #ffe066;
+  --g-_private-mode-yellow-80: #ffe98f;
+  --g-_private-mode-yellow-90: #fff1b8;
+  --g-_private-mode-yellow-95: #fff7d6;
+  --g-_private-mode-yellow-99: #fffefa;
+
+  /** CONSTANTS **/
+  --g-_private-mode-amber-light-constant-10: #371a00;
+  --g-_private-mode-amber-light-constant-20: #592a00;
+  --g-_private-mode-amber-light-constant-30: #853e00;
+  --g-_private-mode-amber-light-constant-40: #c65006;
+  --g-_private-mode-amber-light-constant-45: #ed6007;
+  --g-_private-mode-amber-light-constant-50: #fa851e;
+  --g-_private-mode-amber-light-constant-60: #fba050;
+  --g-_private-mode-amber-light-constant-70: #ffb370;
+  --g-_private-mode-amber-light-constant-80: #ffc898;
+  --g-_private-mode-amber-light-constant-90: #ffe5ce;
+  --g-_private-mode-amber-light-constant-95: #fff5eb;
+  --g-_private-mode-amber-light-constant-99: #fffcfa;
+
+  --g-_private-mode-primary-dark-constant-10: #e9defe;
+  --g-_private-mode-primary-dark-constant-20: #d2bffc;
+  --g-_private-mode-primary-dark-constant-30: #b79bfd;
+  --g-_private-mode-primary-dark-constant-40: #b192fc;
+  --g-_private-mode-primary-dark-constant-45: #a986fd;
+  --g-_private-mode-primary-dark-constant-50: #8551ec;
+  --g-_private-mode-primary-dark-constant-60: #7947d7;
+  --g-_private-mode-primary-dark-constant-70: #614096;
+  --g-_private-mode-primary-dark-constant-80: #402b64;
+  --g-_private-mode-primary-dark-constant-90: #392555;
+  --g-_private-mode-primary-dark-constant-95: #2e1e48;
+  --g-_private-mode-primary-dark-constant-99: #1c122b;
+
+  --g-_private-mode-neutral-dark-constant-0: #ffffff;
+  --g-_private-mode-neutral-dark-constant-10: #ebeaeb;
+  --g-_private-mode-neutral-dark-constant-20: #dddadd;
+  --g-_private-mode-neutral-dark-constant-30: #cccace;
+  --g-_private-mode-neutral-dark-constant-40: #b2afb6;
+  --g-_private-mode-neutral-dark-constant-45: #98949e;
+  --g-_private-mode-neutral-dark-constant-50: #87848b;
+  --g-_private-mode-neutral-dark-constant-60: #666369;
+  --g-_private-mode-neutral-dark-constant-70: #575459;
+  --g-_private-mode-neutral-dark-constant-80: #524f54;
+  --g-_private-mode-neutral-dark-constant-90: #3e3b3f;
+  --g-_private-mode-neutral-dark-constant-95: #39363a;
+  --g-_private-mode-neutral-dark-constant-99: #050505;
+  --g-_private-mode-neutral-dark-constant-100: #1c1b1e;
+}
+
+
+[data-theme="dark"] {
+  --g-_private-mode-alert-10: #fedbd7;
+  --g-_private-mode-alert-20: #fcada6;
+  --g-_private-mode-alert-30: #fb8d83;
+  --g-_private-mode-alert-40: #fb7e7e;
+  --g-_private-mode-alert-45: #f65151;
+  --g-_private-mode-alert-50: #c44545;
+  --g-_private-mode-alert-60: #a83838;
+  --g-_private-mode-alert-70: #8f3232;
+  --g-_private-mode-alert-80: #692b2d;
+  --g-_private-mode-alert-90: #572325;
+  --g-_private-mode-alert-95: #351d1d;
+  --g-_private-mode-alert-99: #2e1919;
+
+  --g-_private-mode-amber-10: #fee5cf;
+  --g-_private-mode-amber-20: #fcc89b;
+  --g-_private-mode-amber-30: #fbb374;
+  --g-_private-mode-amber-40: #f3a968;
+  --g-_private-mode-amber-45: #ef8543;
+  --g-_private-mode-amber-50: #c7650f;
+  --g-_private-mode-amber-60: #a35713;
+  --g-_private-mode-amber-70: #8b4e18;
+  --g-_private-mode-amber-80: #633b18;
+  --g-_private-mode-amber-90: #523114;
+  --g-_private-mode-amber-95: #392613;
+  --g-_private-mode-amber-99: #2e1f0f;
+
+  --g-_private-mode-neutral-0: #ffffff;
+  --g-_private-mode-neutral-10: #ebeaeb;
+  --g-_private-mode-neutral-20: #dddadd;
+  --g-_private-mode-neutral-30: #cccace;
+  --g-_private-mode-neutral-40: #b2afb6;
+  --g-_private-mode-neutral-45: #98949e;
+  --g-_private-mode-neutral-50: #87848b;
+  --g-_private-mode-neutral-60: #666369;
+  --g-_private-mode-neutral-70: #575459;
+  --g-_private-mode-neutral-80: #524f54;
+  --g-_private-mode-neutral-90: #3e3b3f;
+  --g-_private-mode-neutral-95: #39363a;
+  --g-_private-mode-neutral-99: #050505;
+  --g-_private-mode-neutral-100: #1c1b1e;
+
+  --g-_private-mode-primary-10: #e9defe;
+  --g-_private-mode-primary-20: #d2bffc;
+  --g-_private-mode-primary-30: #b79bfd;
+  --g-_private-mode-primary-40: #b192fc;
+  --g-_private-mode-primary-45: #a986fd;
+  --g-_private-mode-primary-50: #8551ec;
+  --g-_private-mode-primary-60: #7947d7;
+  --g-_private-mode-primary-70: #614096;
+  --g-_private-mode-primary-80: #402b64;
+  --g-_private-mode-primary-90: #392555;
+  --g-_private-mode-primary-95: #2e1e48;
+  --g-_private-mode-primary-99: #1c122b;
+
+  --g-_private-mode-success-10: #d0fbed;
+  --g-_private-mode-success-20: #8be4c6;
+  --g-_private-mode-success-30: #66d6b6;
+  --g-_private-mode-success-40: #34d5a8;
+  --g-_private-mode-success-45: #1eb88d;
+  --g-_private-mode-success-50: #109e75;
+  --g-_private-mode-success-60: #1d7c5c;
+  --g-_private-mode-success-70: #18674d;
+  --g-_private-mode-success-80: #13533e;
+  --g-_private-mode-success-90: #104232;
+  --g-_private-mode-success-95: #0f2e24;
+  --g-_private-mode-success-99: #0d261e;
+
+  --g-_private-mode-translucent-0--12: #ffffff;
+  --g-_private-mode-translucent-0--30: #ffffff;
+  --g-_private-mode-translucent-100--30: #1c1b1e;
+
+  --g-_private-mode-yellow-10: #fff9e0;
+  --g-_private-mode-yellow-20: #fbefbb;
+  --g-_private-mode-yellow-30: #f9e594;
+  --g-_private-mode-yellow-40: #efd361;
+  --g-_private-mode-yellow-45: #d6b93c;
+  --g-_private-mode-yellow-50: #c9a92c;
+  --g-_private-mode-yellow-60: #a78d25;
+  --g-_private-mode-yellow-70: #927c20;
+  --g-_private-mode-yellow-80: #75631a;
+  --g-_private-mode-yellow-90: #5c4e15;
+  --g-_private-mode-yellow-95: #3f350e;
+  --g-_private-mode-yellow-99: #322b0b;
+}

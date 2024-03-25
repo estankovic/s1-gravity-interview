@@ -1,0 +1,89 @@
+:root,
+[data-theme='dark'],
+[data-theme='light'] {
+  --g-colors-alert-bg: var(--g-_private-mode-alert-95);
+  --g-colors-alert-border: var(--g-_private-mode-alert-70);
+  --g-colors-alert-icon: var(--g-_private-mode-alert-45);
+
+  --g-colors-amber-bg: var(--g-_private-mode-amber-95);
+  --g-colors-amber-border: var(--g-_private-mode-amber-70);
+  --g-colors-amber-icon: var(--g-_private-mode-amber-45);
+
+  --g-colors-base-bg-container--default: var(--g-_private-mode-neutral-100);
+  --g-colors-base-bg-container--disabled: var(--g-_private-mode-neutral-95);
+  --g-colors-base-bg-container--read-only: var(--g-_private-mode-neutral-90);
+  --g-colors-base-bg-container-contrast: var(--g-_private-mode-neutral-0);
+  --g-colors-base-bg-page: var(--g-_private-mode-neutral-99);
+
+  --g-colors-base-border-primary: var(--g-_private-mode-neutral-95);
+  --g-colors-base-border-primary-contrast: var(--g-_private-mode-neutral-30);
+  --g-colors-base-border-secondary: var(--g-_private-mode-neutral-80);
+
+  --g-colors-base-icon-primary: var(--g-colors-text-primary);
+  --g-colors-base-icon-primary-contrast: var(--g-_private-mode-neutral-100);
+  --g-colors-base-icon-secondary: var(--g-colors-text-secondary);
+  --g-colors-base-icon-secondary-contrast: var(--g-_private-mode-neutral-60);
+
+  --g-colors-info-bg: var(--g-_private-mode-primary-95);
+  --g-colors-info-border: var(--g-_private-mode-primary-70);
+  --g-colors-info-icon: var(--g-_private-mode-primary-45);
+
+  --g-colors-interactives-bg--default: var(--g-_private-mode-primary-45);
+  --g-colors-interactives-bg--disabled: var(--g-_private-mode-neutral-70);
+  --g-colors-interactives-bg--hover: var(--g-_private-mode-primary-95);
+  --g-colors-interactives-bg--selected: var(--g-_private-mode-primary-90);
+
+  --g-colors-interactives-border--default: var(--g-_private-mode-primary-45);
+  --g-colors-interactives-border--disabled: var(--g-_private-mode-neutral-70);
+  --g-colors-interactives-border--focus: var(--g-_private-mode-primary-45);
+  --g-colors-interactives-border--hover: var(--g-_private-mode-primary-60);
+
+  --g-colors-interactives-icon--default: var(--g-_private-mode-primary-45);
+  --g-colors-interactives-icon--disabled: var(--g-_private-mode-neutral-60);
+
+  --g-colors-interactives-text: var(--g-_private-mode-primary-45);
+
+  --g-colors-neutral-bg: var(--g-_private-mode-neutral-99);
+  --g-colors-neutral-border: var(--g-_private-mode-neutral-70);
+
+  --g-colors-neutral-icon: var(--g-_private-mode-neutral-40);
+
+  --g-colors-risk-data-vis-critical: var(--g-_private-mode-alert-40);
+  --g-colors-risk-data-vis-high: var(--g-_private-mode-amber-45);
+  --g-colors-risk-data-vis-low: var(--g-_private-mode-success-45);
+  --g-colors-risk-data-vis-medium: var(--g-_private-mode-yellow-45);
+
+  --g-colors-risk-icon-critical: var(--g-_private-mode-alert-40);
+  --g-colors-risk-icon-high: var(--g-_private-mode-amber-45);
+  --g-colors-risk-icon-low: var(--g-_private-mode-success-45);
+  --g-colors-risk-icon-medium: var(--g-_private-mode-yellow-45);
+
+  --g-colors-risk-text-bg-critical: var(--g-_private-mode-alert-40);
+  --g-colors-risk-text-bg-high: var(--g-_private-mode-amber-40);
+  --g-colors-risk-text-bg-low: var(--g-_private-mode-success-40);
+  --g-colors-risk-text-bg-medium: var(--g-_private-mode-yellow-40);
+
+  --g-colors-severity-data-vis-critical: var(--g-_private-mode-alert-40);
+  --g-colors-severity-data-vis-high: var(--g-_private-mode-amber-45);
+  --g-colors-severity-data-vis-low: var(--g-_private-mode-neutral-50);
+  --g-colors-severity-data-vis-medium: var(--g-_private-mode-yellow-45);
+  --g-colors-severity-data-vis-none: var(--g-_private-mode-neutral-60);
+
+  --g-colors-severity-icon-critical: var(--g-_private-mode-alert-40);
+  --g-colors-severity-icon-high: var(--g-_private-mode-amber-45);
+  --g-colors-severity-icon-low: var(--g-_private-mode-neutral-50);
+  --g-colors-severity-icon-medium: var(--g-_private-mode-yellow-45);
+  --g-colors-severity-icon-none: var(--g-_private-mode-neutral-50);
+
+  --g-colors-success-bg: var(--g-_private-mode-success-95);
+  --g-colors-success-border: var(--g-_private-mode-success-70);
+  --g-colors-success-icon: var(--g-_private-mode-success-45);
+
+  --g-colors-text-code: var(--g-_private-mode-amber-40);
+  --g-colors-text-danger: var(--g-_private-mode-alert-45);
+  --g-colors-text-disabled: var(--g-_private-mode-neutral-60);
+  --g-colors-text-primary: var(--g-_private-mode-neutral-10);
+  --g-colors-text-primary-contrast: var(--g-_private-mode-neutral-100);
+  --g-colors-text-secondary: var(--g-_private-mode-neutral-45);
+  --g-colors-text-secondary-contrast: var(--g-_private-mode-neutral-80);
+}

@@ -1,0 +1,21 @@
+.PreviewWrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Preview {
+  display: flex;
+  align-content: center;
+  width: 350px;
+}
+
+:global(code) {
+  background: #ffebeb;
+  padding: 2px 4px;
+  border-radius: 2px;
+  border: 1px solid #e0cece;
+}
